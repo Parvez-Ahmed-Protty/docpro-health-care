@@ -1,0 +1,11 @@
+.login-container {
+  border-radius: 20px;
+  margin-top: 90px;
+}
+.bg-color {
+  background-color: #453f85;
+}
+.login-btn {
+  width: 48%;
+  margin: 5px;
+}

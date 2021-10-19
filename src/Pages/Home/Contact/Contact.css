@@ -1,0 +1,13 @@
+.default-container {
+  height: 250px;
+  background-color: #b7e9e1;
+  margin-top: 80px;
+}
+.banner-img {
+  height: 250px;
+  width: 300px;
+}
+.contact-icon {
+  font-size: 70px;
+  color: #00224f;
+}

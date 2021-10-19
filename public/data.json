@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "name": "Dr. Nasiruddin Molla Bulbul",
+    "image": "https://i.ibb.co/L5kQkRV/doctor6.png",
+    "address": "Kamalapur Manda Road, Dhaka",
+    "phone": "+8801724008677",
+    "education": "MBBS (DU), MCPS (Dermatology), DDV (BSMMU)",
+    "expert": "Skin, Hair & Sexual Diseases Specialist",
+    "about": "Dr. Md. Nasiruddin Molla Bulbul is a Skin, Hair & Sexual Diseases Specialist doctor in Dhaka. His qualification is MBBS (DU), MCPS (Dermatology), DDV (BSMMU). He is a Consultant in the Department of Dermatology & Venereology at Islami Bank Hospital, Mugda. He regularly provides treatment to his patients at Islami Bank Hospital, Mugda. Practicing hour of Dr. Md. Nasiruddin Molla Bulbul at Islami Bank Hospital, Mugda is 10am to 12.30pm & 6pm to 9pm (Closed: Friday).",
+    "price": "3000"
+  },
+  {
+    "id": "2",
+    "name": " Dr. Akram Ullah Sikder",
+    "image": "https://i.ibb.co/9H2N0KK/doctor5.png",
+    "address": "17, Road # 08, Dhanmondi R/A, Dhaka",
+    "phone": "+8801744898934",
+    "education": "MBBS, DDV",
+    "expert": "Dermatology & Venereology Specialist",
+    "about": "Prof. Dr. Akram Ullah Sikder is a Dermatology & Venereology Specialist doctor in Dhaka. His qualification is MBBS, DDV. He is a Professor in the Department of Dermatology & Venereology at Bangabandhu Sheikh Mujib Medical University Hospital. He regularly provides treatment to his patients at Anwer Khan Modern Hospital Limited. Practicing hour of Prof. Dr. Akram Ullah Sikder at Anwer Khan Modern Hospital Limited is 4pm to 6.30pm (Closed: Friday).",
+    "price": "2200"
+  },
+  {
+    "id": "3",
+    "name": "Dr. Fatema-Tu-Zohora",
+    "image": "https://i.ibb.co/F558dp1/doctor4.png",
+    "address": " 9/3 Parboti Nagar, Thana Road, Savar, Dhaka",
+    "phone": " +8801716358146",
+    "education": "MBBS, MD (BSMMU)",
+    "expert": "Skin, Allergy, Laser & Cosmetic Dermatologist",
+    "about": "Dr. Fatema-Tu-Zohora is a Skin, Sex, Allergy, Laser & Cosmetic Dermatologist doctor in Dhaka. Her qualification is MBBS, MD (BSMMU). She is a Assistant Professor in the Department of Dermatology & Venereology at Enam Medical College & Hospital. She regularly provides treatment to her patients at Enam Medical College & Hospital. Practicing hour of Dr. Fatema-Tu-Zohora at Enam Medical College & Hospital is 8am to 2.30pm (Closed: Friday).",
+    "price": "2000"
+  },
+  {
+    "id": "4",
+    "name": "Dr. Farhana Qayum",
+    "image": "https://i.ibb.co/QNQ0YSc/doctor3.png",
+    "address": "77/A, East Rajabazar, West Panthapath, Dhaka",
+    "phone": "+8801654584856",
+    "education": "MBBS, MCPS, FCPS (Skin & VD)",
+    "expert": "Skin, Allergy, Hair & Sexual Diseases Specialist",
+    "about": "Dr. Farhana Qayum is a Skin, Allergy, Hair & Sexual Diseases Specialist doctor in Dhaka. Her qualification is MBBS, MCPS, FCPS (Skin & VD). She is a Consultant in the Department of Dermatology & Venereology at BRB Hospital, Dhaka. She regularly provides treatment to her patients at BRB Hospital, Dhaka. Practicing hour of Dr. Farhana Qayum at BRB Hospital, Dhaka is 10am to 7pm (Closed: Friday).",
+    "price": "2100"
+  },
+  {
+    "id": "5",
+    "name": "Dr. Muhammad Hassan ",
+    "image": "https://i.ibb.co/8d48YYf/doctor2.png",
+    "address": "Plot # 31, Block # D, Section # 11, Mirpur, Dhaka ",
+    "phone": "+8801992346632",
+    "education": "MBBS (Dhaka), DDV (Vienna)",
+    "expert": "Skin, Allergy, STD, Leprosy Specialist & Surgeon",
+    "about": "Dr. Muhammad Hassan Ali Khan is a Skin, Allergy, STD, Leprosy Specialist & Surgeon doctor in Dhaka. His qualification is MBBS (Dhaka), DDV (Vienna). He is a Consultant in the Department of Dermatology & Venereology at Islami Bank Hospital, Mirpur. He regularly provides treatment to his patients at Islami Bank Hospital, Mirpur. Practicing hour of Dr. Muhammad Hassan Ali Khan at Islami Bank Hospital, Mirpur is 11am to 1pm (Closed: Friday).",
+    "price": ""
+  },
+  {
+    "id": "6",
+    "name": "Dr. M.N. Huda",
+    "image": "https://i.ibb.co/WV3dcyy/doctor1.png",
+    "address": "House # 25, Road # 7, Sector # 4, Uttara, Dhaka",
+    "phone": "+8809613787805",
+    "education": "MBBS (DMC), DDV (DU), FCPS (Skin)",
+    "expert": "Dermatologist, Sexologist & Venereologist",
+    "about": "Prof. Dr. M.N. Huda is a Expert Dermatologist, Sexologist & Venereologist doctor in Dhaka. His qualification is MBBS (DMC), DDV (DU), FCPS (Skin & Sex). He is a Professor (Ex) in the Department of Dermatology & Venereology at Dhaka Medical College & Hospital. He regularly provides treatment to his patients at Popular Diagnostic Center, Uttara. Practicing hour of Prof. Dr. M.N. Huda at Popular Diagnostic Center, Uttara is 9am to 12pm & 4.30pm to 10pm (Sun & Tue).",
+    "price": "2000"
+  }
+]
