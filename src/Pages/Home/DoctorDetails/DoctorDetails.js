@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { useState } from "react/cjs/react.development";
 import banner3 from "../../../images/banner-3.png";
 import "./DoctorDetails.css";
 
