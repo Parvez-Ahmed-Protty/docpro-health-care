@@ -7,7 +7,8 @@ Project link : https://nifty-poincare-daed3f.netlify.app/
 4. Context API
 5. React router dom
 6. firebase authentications
-#Feature
+
+## Feature
 1. You can chack up your health 
 2. you can chack doctors and information
 3. Online Make Appointment
