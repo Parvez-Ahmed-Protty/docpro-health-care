@@ -1,12 +1,40 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 import "./Login.css";
 
 const Login = () => {
-    const {singInWithGoogle, singInWithGithub,handalEmailChange,handelPasswordChange,SingInWithEmailPassword, error} =useAuth();
+      const history = useHistory();
+      const location = useLocation();
+      const redirect_uri = location.state?.from || "/home";
+ 
+    const {singInWithGoogle, singInWithGithub,handalEmailChange,handelPasswordChange,SingInWithEmailPassword, error, setLoading, setError} =useAuth();
+     const handleGoogle = () => {
+       singInWithGoogle()
+         .then((res) => {
+           history.push(redirect_uri);
+         })
+         .catch((error) => {
+           setError(error.message);
+         })
+         .finally(() => {
+           setLoading(false);
+         });
+     };
+     const handleGithub = () => {
+       singInWithGithub()
+         .then((res) => {
+           history.push(redirect_uri);
+         })
+         .catch((error) => {
+           setError(error.message);
+         })
+         .finally(() => {
+           setLoading(false);
+         });
+     };
   return (
-    <div className="login-container w-50 mx-auto bg-white">
+    <div className="login-container mx-auto bg-white">
       <div className="bg-color p-3 rounded">
         <h2 className="fw-bold text-white">Please Login</h2>
       </div>
@@ -32,7 +60,7 @@ const Login = () => {
           <label htmlFor="floatingPassword">Password</label>
         </div>
         <div className="text-start my-3">
-          <p className='text-danger'>{error}</p>
+          <p className="text-danger">{error}</p>
         </div>
         <div className="text-end my-3">
           <p>Forget Password?</p>
@@ -40,7 +68,7 @@ const Login = () => {
         <div>
           <button
             onClick={SingInWithEmailPassword}
-            className="btn btn-success w-100 rounded-pill py-3"
+            className="btn btn-success w-100 px-3 rounded-pill py-3"
             type="submit"
           >
             Login Now
@@ -53,15 +81,15 @@ const Login = () => {
         </div>
         <div className="">
           <button
-            onClick={singInWithGoogle}
-            className="btn bg-danger text-white login-btn rounded-pill py-3"
+            onClick={handleGoogle}
+            className="btn bg-danger text-white login-btn rounded-pill py-2 px-3"
           >
             <i className="fa fa-google fs-4 me-2" aria-hidden="true"></i>
             Login with Google
           </button>
           <button
-            onClick={singInWithGithub}
-            className="btn btn-dark login-btn rounded-pill py-3"
+            onClick={handleGithub}
+            className="btn btn-dark login-btn rounded-pill py-2 px-3"
           >
             <i className="fa fa-github fs-4 me-2" aria-hidden="true"></i>
             Login with GitHub

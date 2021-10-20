@@ -68,10 +68,9 @@ const Header = () => {
               </li>
             </ul>
             <form className="d-flex align-items-center">
-              <div className="d-flex align-items-center me-4 mt-3">
+               <div className="d-flex align-items-center me-4 mt-3">
                 {user?.email ? <p>{user?.displayName}</p> : <p></p>}
-              </div>
-              <p>{user?.displayName || ""}</p>
+              </div> 
               <Link to="/login">
                 {user?.email ? (
                   <button

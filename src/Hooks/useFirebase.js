@@ -19,6 +19,7 @@ const useFirebase = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const[loading, setLoading] = useState(true);
   // google provider
   const googleProvider = new GoogleAuthProvider();
   // github provider
@@ -47,44 +48,40 @@ const useFirebase = () => {
   };
   // singin with google
   const singInWithGoogle = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((res) => {
-        setUser(res.user);
-        console.log(res.user);
-      })
-      .catch((error) => {
-        setError(error.message);
-      });
+    setLoading(true)
+    return signInWithPopup(auth, googleProvider)
+      
   };
   // github provider
   const singInWithGithub = () => {
-    signInWithPopup(auth, githubProvider)
-      .then((res) => {
-        console.log(res.user);
-        setUser(res.user);
-      })
-      .catch((error) => {
-        setError(error.message);
-      });
+    setLoading(true);
+    return signInWithPopup(auth, githubProvider)
+  
   };
   // logOut
   const logOut = () => {
+    setLoading(true)
     signOut(auth)
       .then(() => {
         setUser({});
       })
       .catch((error) => {
         setError("");
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
   //  onAuthStateChanged
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+    const stateChange =  onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
       } else {
       }
-    });
+      setLoading(false)
+    })
+    return stateChange;
   }, []);
   return {
     user,
@@ -96,6 +93,9 @@ const useFirebase = () => {
     handelPasswordChange,
     SingInWithEmailPassword,
     handelName,
+    loading,
+    setLoading,
+    setError
   };
 };
 

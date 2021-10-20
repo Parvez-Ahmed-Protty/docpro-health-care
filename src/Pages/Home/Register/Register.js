@@ -16,7 +16,7 @@ const Register = () => {
   console.log(name);
   return (
     <div>
-      <div className="login-container w-50 mx-auto bg-white">
+      <div className="login-container mx-auto bg-white">
         <div className="bg-color p-3 rounded">
           <h2 className="fw-bold text-white">Please Register</h2>
         </div>
@@ -92,14 +92,14 @@ const Register = () => {
           <div className="">
             <button
               onClick={singInWithGoogle}
-              className="btn bg-danger text-white login-btn rounded-pill py-3"
+              className="btn bg-danger text-white login-btn rounded-pill py-2 px-3"
             >
               <i className="fa fa-google fs-4 me-2" aria-hidden="true"></i>
               SignUp with Google
             </button>
             <button
               onClick={singInWithGithub}
-              className="btn btn-dark login-btn rounded-pill py-3"
+              className="btn btn-dark login-btn rounded-pill py-2 px-3"
             >
               <i className="fa fa-github fs-4 me-2" aria-hidden="true"></i>
               SignUp with GitHub
